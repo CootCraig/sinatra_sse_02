@@ -1,5 +1,7 @@
 # Server-Sent Events
 
+[Github project: sinatra_sse_02](https://github.com/CootCraig/sinatra_sse_02)
+
 ## Run With JRuby and Trinidad Server
 
     $ bundle exec ruby --1.9 --debug -S trinidad
