@@ -1,5 +1,7 @@
 # Server-Sent Events
 
+Demonstrate server-sent events with Sinatra. Both timer based events and Celluloid thread generated events are shown.
+
 [Github project: sinatra_sse_02](https://github.com/CootCraig/sinatra_sse_02)
 
 ## Run With JRuby and Trinidad Server
