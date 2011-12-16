@@ -3,5 +3,5 @@ require 'bundler'
 Bundler.require(:default)
 
 require './site'
-run SseApp
+run Sinatra::Application
 

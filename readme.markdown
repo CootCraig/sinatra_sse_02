@@ -2,13 +2,21 @@
 
 Demonstrate server-sent events with Sinatra. Both timer based events and Celluloid thread generated events are shown.
 
-[Github project: sinatra_sse_02](https://github.com/CootCraig/sinatra_sse_02)
+[Github project: sinatra sse 02](https://github.com/CootCraig/sinatra_sse_02)
+
+## Browser Demo pages
+
+[Celluloid Thread Event Source](/actorpage/)
+
+[Inline Timer Event Source](/timerpage/)
 
 ## Run With JRuby and Trinidad Server
 
     $ bundle exec ruby --1.9 --debug -S trinidad
 
 ## Stand Alone test with curl
+
+View the server-sent events
 
 ### Celluloid actor based server-sent events
 
