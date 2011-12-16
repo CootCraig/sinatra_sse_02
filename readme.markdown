@@ -6,9 +6,9 @@ Demonstrate server-sent events with Sinatra. Both timer based events and Cellulo
 
 ## Browser Demo pages
 
-[Celluloid Thread Event Source](/actorpage/)
+[Celluloid Thread Event Source](/actorpage)
 
-[Inline Timer Event Source](/timerpage/)
+[Inline Timer Event Source](/timerpage)
 
 ## Run With JRuby and Trinidad Server
 

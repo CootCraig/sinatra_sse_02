@@ -1,6 +1,5 @@
 
 $(document).ready(function() {
-  $(".log").append('<p>ready</p>');
   var my_id = "Me"
   var url = "/actor/" + my_id
   var source = new EventSource(url)
