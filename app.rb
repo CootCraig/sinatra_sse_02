@@ -10,14 +10,36 @@ class ActorSource
   include Celluloid
   def initialize(target)
     @target = target
+    @state = nil
   end
+  # talk,idle,hold.
+  # idle => talk
+  # talk => idle | hold
+  # hold => talk
   def start
     while true do
       sleep ((Random.rand(8)) + 4)
-      data = {source: 'actor', time: Time.now.to_s}
+      next_state()
+      data = {source: 'actor', time: Time.now.to_s, state: @state.to_s}
       puts "ActorSource reporting: #{data.to_s}"
       @target.report!(data)
     end
+  end
+  def next_state
+    @state = case @state
+             when :idle
+               :talk
+             when :talk
+               if Random.rand(1000) < 200
+                 :hold
+               else
+                 :idle
+               end
+             when :hold
+               :talk
+             else
+               :idle
+             end
   end
 end
 class ActorReporter
